@@ -4,7 +4,8 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 
-client = MongoClient('내AWS아이피', 27017, username="아이디", password="비밀번호")
+client = MongoClient('localhost', 27017)
+# client = MongoClient('34.229.81.162', 27017, username="test", password="test")
 db = client.dbsparta_plus_week3
 
 
